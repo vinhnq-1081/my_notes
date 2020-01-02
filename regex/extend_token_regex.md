@@ -21,7 +21,7 @@
 |`\g’name’`|`/(?'letter'a).*(\g<letter>)/`</br></br>a plus a -> pass</br>a pluss c -> fail|Sử dụng lại group có tên là `name`|
 |`\g<name>`||Giống với `\g’name’`|
 |`\xYY`|`/\xD4/`</br></br>Ô -> pass</br>ô -> fail|Trùng khớp với kí tự 8 bit kiểu giá trị hex, [tham khảo](https://unicode-table.com/en/)|
-|\x{YYYY}|`/\x{2AC}/`</br></br>ʬ -> pass</br>Ô -> fail|Trùng khớp với kí tự 16 bit kiểu giá trị hex, [tham khảo](https://unicode-table.com/en/)|
+|`\x{YYYY}`|`/\x{2AC}/`</br></br>ʬ -> pass</br>Ô -> fail|Trùng khớp với kí tự 16 bit kiểu giá trị hex, [tham khảo](https://unicode-table.com/en/)|
 
 ## 3.Group Constructs (Gom nhóm)
 
@@ -36,7 +36,7 @@
 |`(?!...)`|`/foo(?!bar)/`</br></br>foobaz -> pass</br>foobar -> pass|Trùng khớp với `foo` nếu đằng sau `foo` không phải là `bar` và `bar` sẽ không phải là một phần của kết quả|
 |`(?<=...)`|`/(?<=foo)bar/`</br></br>foobar -> pass</br>foObar -> fail|Trùng khớp với `bar` nếu đằng trước `bar` là `foo` và `foo` sẽ không phải là một phần của kết quả|
 |`(?<!...)`|`/(?<!foo)bar/`</br></br>foObar -> pass</br>foobar -> fail|Trùng khớp với `bar` nếu đằng trước `bar` không phải là `foo` và `foo` sẽ không phải là một phần của kết quả|
-|`(?(?=...)yes|no)`|`(?(?=is)(is delicious)|(disgusting))`</br></br>Candy is delicious -> pass</br>Candy is disgusting -> fail|Trừng khớp đằng trước là `is` thì phải lấy đúng chuỗi giá trị `is delicious`, nếu sai sẽ lấy chuỗi `disgusting`|
+|`(?(?=...)yes|no)`|`(?(?=is)(is delicious)|(disgusting))`</br></br>Candy is delicious -> pass</br>Candy is disgusting -> fail|Trùng khớp đằng trước là `is` thì phải lấy đúng chuỗi giá trị `is delicious`, nếu sai sẽ lấy chuỗi `disgusting`|
 |`(?(?<=...)yes|no)`|`(?(?<=is)(is delicious)|(disgusting))`</br></br>Candy is disgusting -> pass</br>Candy is delicious -> fail|Trùng khớp nếu là `is` thì phải lấy đúng chuỗi giá trị `is delicious`, nếu sai sẽ lấy chuỗi `disgusting`|
 
 ## 4. Flags
