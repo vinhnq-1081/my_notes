@@ -23,8 +23,11 @@ thịt bò (chính hãng): 100.000 VND/kg -> thịt bò: 100,000 VND/kg
 ## 4. Kiểm tra mã số zipcode Nhật  Bản theo format xxx-xxxx
 
 234-568
+
 2579-4578
+
 205-0000
+
 206-1036
 
 ## 5. Kiểm tra format email sun-asterisk
@@ -41,4 +44,4 @@ nguyen.quang.vinhb@sun-asterisk.com
 
 `(?(?=F)Fl|Th)e?y?\sb(?:o\w|\w{3})l$`
 
-Tìm một từ có 2 chữ cái có ý nghĩa để pas regex trên
+Tìm một từ có 2 chữ cái có ý nghĩa để pass regex trên
