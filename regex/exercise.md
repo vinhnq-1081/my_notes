@@ -39,9 +39,3 @@ nguyen.quang.vinhb.@sun-asterisk.com
 nguyen.quang.vinhb@sun-asterisk.com111
 
 nguyen.quang.vinhb@sun-asterisk.com
-
-## 6. BTVN (nhanh nhất sẽ được nhận card)
-
-`(?(?=F)Fl|Th)e?y?\sb(?:o\w|\w{3})l$`
-
-Tìm một từ có 2 chữ cái có ý nghĩa để pass regex trên
